@@ -66,6 +66,11 @@ export default new Router({
           path: '/',
           name: 'indexmusic',
           component: indexmusic
+        },
+        {
+          path: '/11',
+          name: 'indexmusic',
+          component: indexmusic
         }
       ]
     }

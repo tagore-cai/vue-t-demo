@@ -1,9 +1,13 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-Vue.use(Vuex);
-import event from './event/index';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import event from './event/index'
+Vue.use(Vuex)
 export default new Vuex.Store({
-    modules: {
-        event
-    }
-});
+  state: {},
+  actions: {},
+  mutations: {},
+  getters: {},
+  modules: {
+    event
+  }
+})
