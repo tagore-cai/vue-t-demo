@@ -56,34 +56,33 @@
 <style scoped lang="less">
   .content {
     position: fixed;
-    top: 0px;
-    height: 40px;
+    top: 0;
+    height: 2.5rem;
     width: 100%;
     background-color: #6b879f;
-    padding: 5px;
+    padding: .3125rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     z-index: 999;
     .countries {
-      width: 10%;
       text-align: center;
-      margin-left: 7px;
+      margin: 0 .625rem 0 .4375rem;
     }
     .search {
-      height: 20px;
+      height: 1.25rem;
       display: flex;
       align-items: center;
       line-height: 1;
       flex: 1;
       input {
-        width: 90%;
-        border-radius: 20px 0px 0px 20px;
+        width: 95%;
+        border-radius: 1.25rem 0 0 1.25rem;
         background: #657783;
-        padding-left: 20px;
+        padding-left: 1.25rem;
         border: none;
-        height: 30px;
+        height: 1.875rem;
       }
       input::-webkit-input-placeholder,
       textarea::-webkit-input-placeholder {
@@ -95,19 +94,19 @@
         float: left;
       }
       img {
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
         background: #657783;
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 0 1.25rem 1.25rem 0;
       }
     }
   }
 
   .itemMenu {
-    margin: 30px;
+    margin: 1.875rem;
     img {
-      width: 30px;
-      height: 30px;
+      width: 1.875rem;
+      height: 1.875rem;
     }
   }
 

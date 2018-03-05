@@ -4,11 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import swiper from 'vue-awesome-swiper'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import VueTouch from 'vue-touch'
 
-Vue.config.productionTip = false
-
-/* eslint-disable no-new */
 Vue.use(swiper)
+Vue.use(VueTouch, {name: 'v-touch'})
+Vue.use(VueAxios, axios)
+Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,

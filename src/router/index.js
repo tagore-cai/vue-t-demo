@@ -10,6 +10,7 @@ import musicItems from '@/pages/music/mymusic/musicItems'
 import preredio from '@/pages/music/mymusic/preredio'
 import radiomusic from '@/pages/music/radiomusic'
 import indexmusic from '@/pages/music/indexmusic'
+import discuz from '@/pages/discuz'
 
 Vue.use(Router)
 
@@ -26,13 +27,16 @@ export default new Router({
       component: count
     },
     {
+      path: '/discuz',
+      name: 'discuz',
+      component: discuz
+    },
+    {
       path: '/music',
-      name: 'music',
       component: music,
       children: [
         {
           path: 'mymusic',
-          name: 'mymusic',
           component: mymusic,
           children: [
             {
@@ -64,11 +68,6 @@ export default new Router({
         },
         {
           path: '/',
-          name: 'indexmusic',
-          component: indexmusic
-        },
-        {
-          path: '/11',
           name: 'indexmusic',
           component: indexmusic
         }

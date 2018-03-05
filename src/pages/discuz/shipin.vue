@@ -1,13 +1,13 @@
 <template>
   <div>
-
+    shipin
   </div>
 </template>
 
 <script>
-  export default {
-
-  }
+export default {
+  activated() {}
+};
 </script>
 
 <style scoped>

@@ -19,6 +19,10 @@
     color: #2c3e50;
   }
 
+  html{
+    font-size: 16px;
+  }
+
   * {
     padding: 0;
     margin: 0;

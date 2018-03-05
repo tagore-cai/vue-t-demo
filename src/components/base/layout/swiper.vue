@@ -21,11 +21,22 @@
           pagination: ".swiper-pagination",
           paginationType: "bullets",
           paginationClickable: true
+        },
+        onTap:(s,e)=>{
+          console.log('====================================');
+          console.log(e);
+          console.log('====================================');
         }
       }
     },
-    methods:{},
-    mounted(){}
+    methods:{
+
+    },
+    mounted(){
+      console.log('====================================');
+      console.log(this.$refs.mySwiper);
+      console.log('====================================');
+    }
   }
 
 </script>

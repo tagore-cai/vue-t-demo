@@ -46,7 +46,7 @@
 
 <style scoped lang='less'>
   header {
-    height: 50px;
+    height: 3.125rem;
     background: #C20C0C;
     color: #fff;
     ul {
@@ -56,9 +56,9 @@
       li {
         float: left;
         width: 33.33%;
-        font-size: 26px;
-        line-height: 50px;
-        height: 50px;
+        font-size: 1.625rem;
+        line-height: 3.125rem;
+        height: 3.125rem;
         text-align: center;
       }
       li.cur {
@@ -68,20 +68,20 @@
     .caidan {
       top: 0;
       left: 0;
-      height: 50px;
-      line-height: 50px;
-      font-size: 26px;
+      height: 3.125rem;
+      line-height: 3.125rem;
+      font-size: 1.625rem;
       text-align: center;
-      width: 50px;
+      width: 3.125rem;
     }
     .guangpan {
       top: 0;
       right: 0;
-      height: 50px;
-      line-height: 50px;
-      font-size: 26px;
+      height: 3.125rem;
+      line-height: 3.125rem;
+      font-size: 1.625rem;
       text-align: center;
-      width: 50px;
+      width: 3.125rem;
     }
   }
 
