@@ -1,5 +1,13 @@
 <template>
-  <div class="hello" >
+  <div class="hello">
+    <homeHeader></homeHeader>
+    <swiper :datas='imgList'></swiper>
+    <hvideo></hvideo>
+    <div>
+      <router-link to='/music'>音乐</router-link>
+      <router-link to='/discuz'>论坛</router-link>
+      <router-link to='/count'>测试</router-link>
+    </div>
     <radar></radar>
     <linestack></linestack>
   </div>
@@ -16,24 +24,11 @@ export default {
   data() {
     return {
       msg: "Welcome to Your Vue.js App",
-      imgList: [
-        {
-          id: "img1",
-          url:
-            "http://p1.music.126.net/d22ZEE4zWmTaPo6-UCC0hA==/109951163106074160.jpg"
-        },
-        {
-          id: "img3",
-          url:
-            "http://p1.music.126.net/oShqLbK1hWHbcXCDykbJjg==/109951163106517017.jpg"
-        },
-        {
-          id: "img2",
-          url:
-            "http://p1.music.126.net/C_E9xkzwxfJHJrcIZ4PtVA==/109951163106930770.jpg"
-        }
-      ]
+      imgList: this.$store.state.imglists
     };
+  },
+  created(){
+    this.$store.dispatch('GETIMGLIST')
   },
   components: {
     homeHeader,

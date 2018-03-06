@@ -1,48 +1,44 @@
 <template>
-    <swiper :options="swiperOption" :not-next-tick='nextTick' ref="mySwiper">
-      <swiper-slide v-for="item in datas" :key="item.id">
-        <img :src="item.url">
-      </swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
-    </swiper>
+  <swiper :options="swiperOption" :not-next-tick='nextTick' ref="mySwiper">
+    <swiper-slide v-for="item in datas" @on="testN" :key="item.id">
+      <img :src="item.url">
+    </swiper-slide>
+    <div class="swiper-pagination" slot="pagination"></div>
+  </swiper>
 </template>
 
 <script>
-  export default {
-    props:['datas'],
-    data() {
-      return {
-        nextTick:true,
-        swiperOption: {
-          grabCursor: true,
-          setWrapperSize: true,
-          autoplay: 2000,
-          autoplayDisableOnInteraction: false,
-          pagination: ".swiper-pagination",
-          paginationType: "bullets",
-          paginationClickable: true
+export default {
+  props: ["datas"],
+  data() {
+    return {
+      notNextTick:true,
+      nextTick:true,
+      swiperOption: {
+        grabCursor: true,
+        setWrapperSize: true,
+        swiperPerView:1,
+        autoplay: {
+          delay:2000,
+          disableOnInteraction:false
         },
-        onTap:(s,e)=>{
-          console.log('====================================');
-          console.log(e);
-          console.log('====================================');
-        }
+        pagination: ".swiper-pagination",
+        paginationType: "bullets",
+        paginationClickable: true
       }
-    },
-    methods:{
-
-    },
-    mounted(){
-      console.log('====================================');
-      console.log(this.$refs.mySwiper);
-      console.log('====================================');
+    };
+  },
+  methods: {
+    testN(e) {
+      alert(e)
     }
-  }
-
+  },
+  mounted() {}
+};
 </script>
 
 <style lang="less" scoped>
-  img {
-    width: 100%;
-  }
+img {
+  width: 100%;
+}
 </style>

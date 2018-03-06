@@ -8,7 +8,7 @@
 
 <script>
     export default {
-      directive:{
+      directives:{
         focus:{
           inject:function (el) {
             el.focus()
