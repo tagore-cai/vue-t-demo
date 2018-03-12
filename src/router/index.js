@@ -11,6 +11,7 @@ import preredio from '@/pages/music/mymusic/preredio'
 import radiomusic from '@/pages/music/radiomusic'
 import indexmusic from '@/pages/music/indexmusic'
 import discuz from '@/pages/discuz'
+import iqiyi from '@/pages/iqiyi'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/discuz',
       name: 'discuz',
       component: discuz
+    },
+    {
+      path: '/iqiyi',
+      name: 'iqiyi',
+      component: iqiyi
     },
     {
       path: '/music',

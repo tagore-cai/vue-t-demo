@@ -7,6 +7,7 @@
       <router-link to='/music'>音乐</router-link>
       <router-link to='/discuz'>论坛</router-link>
       <router-link to='/count'>测试</router-link>
+      <router-link to='/iqiyi'>爱奇艺</router-link>
     </div>
     <radar></radar>
     <linestack></linestack>
